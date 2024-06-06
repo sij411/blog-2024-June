@@ -1,0 +1,45 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+
+const { slug, title } = Astro.props;
+---
+
+<div class="link-container">
+    <HeaderLink href={'/' + slug}>{title}</HeaderLink>
+</div>
+
+<style>
+    /**
+    
+  nav a {
+    padding: 1em 0.5em;
+    color: var(--text-color);
+    text-decoration: none;
+	border-bottom: 2px solid var(--bg-color);
+  }
+  nav a.active {
+    text-decoration: none;
+	border: 2px solid var(--accent-dark);
+    border-bottom-color: transparent;
+  }
+    
+    */
+
+    .link-container {
+        padding: 1em 0.5em;
+        background-color: var(--bg-color);
+        opacity: 0.5;
+
+        border-bottom: 2px solid var(--accent-dark);
+    }
+
+    .link-container a {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+    .link-container a.active {
+        border: 2px solid var(--accent-dark);
+        border-bottom: nonel;
+    }
+</style>
