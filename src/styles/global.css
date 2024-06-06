@@ -5,8 +5,6 @@
  */
 
 :root {
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
@@ -14,6 +12,13 @@
 	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
 	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
+
+	/* my variable */
+	--bg-color: #001C30;
+	--accent: #97FBFD;
+	--accent-dark: #76DFDB;
+	--text: #E3D6D5;
+
 }
 @font-face {
 	font-family: 'Atkinson';
@@ -34,13 +39,13 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
+	background: var(--bg-color);
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
 	font-size: 20px;
 	line-height: 1.7;
+	color: var(--text);
 }
 main {
 	width: 720px;
@@ -105,8 +110,8 @@ img {
 	border-radius: 8px;
 }
 code {
-	padding: 2px 5px;
-	background-color: rgb(var(--gray-light));
+	padding: 1.5px 5px;
+	background-color: #0B666A;
 	border-radius: 2px;
 }
 pre {
