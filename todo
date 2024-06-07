@@ -1,7 +1,7 @@
 # Todo List
 
-- [ ] header
-    - [ ] header nav a => container
+- [x] header
+    - [x] header nav a => container
 - [ ] Modifiy layouts
 - [ ] Main page - portfolio
 - [ ] Blog page
