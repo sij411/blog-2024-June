@@ -19,6 +19,10 @@
 	--accent-dark: #76DFDB;
 	--text: #E3D6D5;
 
+	/* cyberpunk neon */
+	--cyber-black: 2, 14, 22;
+
+
 }
 @font-face {
 	font-family: 'Atkinson';
@@ -39,7 +43,7 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: var(--bg-color);
+	background: rgb(var(--cyber-black));
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;

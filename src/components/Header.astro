@@ -4,65 +4,60 @@ import { SITE_TITLE } from "../consts";
 ---
 
 <header>
-  <div class="header-block"><a href="/">{SITE_TITLE}</a></div>
-    <nav>
-      <ul>
-        <li><HeaderLink href="/">Home</HeaderLink></li>
-        <li><HeaderLink href="/blog">Blog</HeaderLink></li>
-        <li><HeaderLink href="/about">About</HeaderLink></li>
-      </ul>
-    </nav>
-  
-  <div class="header-block">Hello, World</div>
+  <nav>
+    <ul>
+      <li class="underline"><a href="/">{SITE_TITLE}</a></li>
+      <li><HeaderLink href="/" class="underline">Home</HeaderLink></li>
+      <li><HeaderLink href="/blog" class="underline">Blog</HeaderLink></li>
+      <li><HeaderLink href="/about" class="underline">About</HeaderLink></li>
+      <li class="underline">Hello, World</li>
+    </ul>
+  </nav>
 </header>
 <style>
   header {
-
+    padding-top: 2rem;
     background: var(--bg-color);
     box-shadow: 0 2px 8px rgba(var(--black), 5%);
-    display: grid;
-	border-bottom: 2px solid var(--accent-dark);
-    grid-template-columns: 1fr 3fr 1fr;
-    align-items: stretch;
-  }
- 
-  .header-block a {
-    text-decoration: none;
   }
 
   nav {
-
     margin-bottom: 0;
     padding: 0;
+    display: grid;
   }
 
   nav ul {
     list-style: none;
     margin: 0;
-	display: grid;
+    display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  
-
-
-  
-
-  nav a {
-	width: 100%;
-	padding: 1em 0;
-    color: var(--text-color);
-    text-decoration: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	text-align: center;
   }
-  nav a.active {
+
+  .underline {
+	border-bottom: 2px solid var(--accent-dark);
+  }
+
+
+  nav a {
+    width: 100%;
+    color: var(--text-color);
     text-decoration: none;
-    border: 2px solid var(--accent-dark);
-    border-bottom-color: var(--accent);
+    text-align: center;
+  }
+
+  nav a.active {
+    background: rgb(var(--cyber-black));
+    text-decoration: none;
+	border: 2px solid var(--accent-dark);
+	border-bottom: transparent;
+	
   }
 
   nav a.active::before {
-	content: ">   ";
+    content: ">   ";
   }
 
   .internal-links HeaderLink {
