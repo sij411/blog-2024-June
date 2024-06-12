@@ -6,78 +6,75 @@ import { SITE_TITLE } from "../consts";
 <header>
   <nav>
     <ul>
-      <li class="underline"><a href="/">{SITE_TITLE}</a></li>
-      <li><HeaderLink href="/" class="underline">Home</HeaderLink></li>
-      <li><HeaderLink href="/blog" class="underline">Blog</HeaderLink></li>
-      <li><HeaderLink href="/projects" class="underline">Projects</HeaderLink></li>
-      <li class="underline">
-        <a href="https://github.com/sij411">
-          <img
-            src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
-          />
-        </a>
+      <li>
+        <div>{SITE_TITLE}</div>
+        <li><HeaderLink href="/">Home</HeaderLink></li>
+        <li><HeaderLink href="/blog">Blog</HeaderLink></li>
+        <li>
+          <HeaderLink href="/projects">Projects</HeaderLink>
+        </li>
+        <li>
+          <HeaderLink href="https://github.com/sij411"> GitHub </HeaderLink>
+        </li>
       </li>
     </ul>
   </nav>
-</header>
-<style>
-  header {
-    padding-top: 2rem;
-    background: var(--bg-color);
-    box-shadow: 0 2px 8px rgba(var(--black), 5%);
-  }
-
-  nav {
-    margin-bottom: 0;
-    padding: 0;
-    display: grid;
-  }
-
-  nav ul {
-    list-style: none;
-    margin: 0;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    text-align: center;
-  }
-
-  li img {
-    height: 0.9em;
-  }
-
-  .underline {
-    border-bottom: 2px solid var(--accent-dark);
-  }
-
-  nav a {
-    width: 100%;
-    color: var(--text-color);
-    text-decoration: none;
-    text-align: center;
-  }
-
-  nav a.active {
-    background:var(--bg-color);
-    text-decoration: none;
-    border: 2px solid var(--accent-dark);
-    border-bottom: transparent;
-  }
-
-  nav a.active::before {
-    content: ">";
-  }
-
-  .internal-links HeaderLink {
-    margin-right: 0;
-  }
-  .social-links,
-  .social-links a {
-    display: flex;
-  }
-  @media (max-width: 720px) {
-    .social-links {
-      display: none;
+  <style>
+    header {
+      padding-top: 2rem;
+      background: var(--bg-color);
+      box-shadow: 0 2px 8px rgba(var(--black), 5%);
     }
-  }
-</style>
+
+    nav {
+      margin-bottom: 0;
+      padding: 0;
+      display: grid;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      text-align: center;
+    }
+
+    nav a {
+      text-align: center;
+
+      color: var(--text-color);
+      text-decoration: none;
+      text-align: center;
+
+      width: 100%;
+      border: 2px solid transparent;
+      border-bottom-color: var(--accent-dark);
+    }
+
+    nav a.active {
+      text-decoration: none;
+      border-color: var(--accent-dark);
+      border-bottom: transparent;
+    }
+
+    nav a.active::before {
+      content: ">";
+    }
+
+    .internal-links HeaderLink {
+      margin-right: 0;
+    }
+    .social-links,
+    .social-links a {
+      display: flex;
+    }
+    @media (max-width: 720px) {
+      .social-links {
+        display: none;
+      }
+    }
+  </style>
+</header>
