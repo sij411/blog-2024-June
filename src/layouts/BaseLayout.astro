@@ -16,7 +16,6 @@ const { pageTitle } = Astro.props;
   <body>
     <Header />
     <main>
-      <!-- ContentsContainer component -->
       <slot />
     </main>
     <Footer />
@@ -25,7 +24,17 @@ const { pageTitle } = Astro.props;
 
 <style>
   main {
+    width: calc(100% - 1.5em);
     display: grid;
     grid-template-columns: 1fr 2fr;
+  }
+
+  section {
+    padding:0;
+  }
+
+  section ul li {
+    width: 100%;
+    padding: 0;
   }
 </style>
