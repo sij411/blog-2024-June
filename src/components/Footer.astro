@@ -10,19 +10,16 @@ const today = new Date();
         src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
       />
     </a>
+
     <a href="https://devocean.sk.com/">
-      <img
-        src="/public/icon_category_devocean_young.png"
-        width="32"
-        height="32"
-      />
+      <div class="social-link">Devocean</div>
     </a>
   </div>
 </footer>
 <style>
   footer {
     padding: 2em 1em 6em 1em;
-    background: rgb(var(--cyber-black));
+    background: var(--bg-color);
     text-align: center;
   }
   .social-links {
@@ -32,11 +29,15 @@ const today = new Date();
     margin-top: 1em;
 
   }
+  .social-link {
+    color: var(--accent-dark);
+    font-weight: 700;
+  }
   .social-links a {
     text-decoration: none;
-    color: rgb(var(--gray));
+    color: rgb(var(--accent-dark));
   }
   .social-links a:hover {
-    color: rgb(var(--gray-dark));
+    color: rgb(var(--accent-dark));
   }
 </style>

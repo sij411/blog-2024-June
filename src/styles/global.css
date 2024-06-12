@@ -14,7 +14,7 @@
 		0 16px 32px rgba(var(--gray), 33%);
 
 	/* my variable */
-	--bg-color: #070800;
+	--bg-color: #1E1E1E;
 	--accent: #97FBFD;
 	--accent-dark: #76DFDB;
 	--text: #E3D6D5;
@@ -43,7 +43,7 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: rgb(var(--cyber-black));
+	background: var(--bg-color);
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
