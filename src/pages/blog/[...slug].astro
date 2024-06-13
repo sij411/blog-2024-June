@@ -18,25 +18,22 @@ const { Content } = await post.render();
 ---
 
 <BaseLayout>
-  
-    <ContentsContainer class="posts-list"/>
-    <BlogPost {...post.data}>
-      <Content />
-    </BlogPost>
-  
+  <ContentsContainer />
+  <BlogPost {...post.data}>
+    <Content />
+  </BlogPost>
 </BaseLayout>
 
 <style>
-	main {
-		display: grid;
-		grid-template-columns: 1fr 2fr;
-	}
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
 
-	@media (max-width: 720px) {
-				main {
-					display: flex;
-					gap: 0.5em;
-				}
-
-			}
+  @media (max-width: 720px) {
+    main {
+      display: flex;
+      gap: 0.5em;
+    }
+  }
 </style>
