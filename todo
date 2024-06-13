@@ -2,10 +2,10 @@
 
 - [x] header
     - [x] header nav a => container
-- [ ] Modifiy layouts
+- [x] Modifiy layouts
 - [ ] Main page - portfolio
-- [ ] Blog page
-- [ ] About - profile page
-- [ ] Footer 
-    - [ ] Modify the devocean logo brigher
-## Completed Tasks
+    - [ ] profile box on the left side
+- [x] Blog page
+    - [x] posts list on the left side
+- [x] About - profile page
+- [x] Footer 
