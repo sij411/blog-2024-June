@@ -13,7 +13,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>Jiwon Kwon Blog</h1>
+			<h1>Jiwon Kwon</h1>
 			<p>
 				Hi, I'm Jiwon Kwon. I'm a CS student who loves writing what I thought and learned. 
 				Currently I'm studying about web development and infra. Big fan of Java and Rust, also I love making goofy side projects. 
@@ -22,6 +22,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			<p>
 				I do love collaborating with people no matther which field they are in. 
 				<a href="https://body-as-data.vercel.app/"><h5>[The newest project] Body-as-data </h5></a>
+				<div id="project-images">
+					<img src="/public/images/body-1.jpeg"></img>
+					<img src="/public/images/body-2.jpeg"></img>
+					<img src="/public/images/body-3.jpeg"></img>
+					<img src="/public/images/body-4.jpeg"></img>
+				</div>
+				
+
 				> I made some Raspberry pi covered with resins and the website that converts user's photo and show it as encoded.
 				Check it on the project page if you are interested.
 			</p>
@@ -35,3 +43,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Footer />
 	</body>
 </html>
+
+
+<style>
+	#project-images {
+		display: gird;
+		grid-template-columns: repeat(4, 1fr);
+		
+	
+	}
+	img {
+		width: 150px;
+		height: 150px;
+	}
+</style>
