@@ -7,7 +7,7 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
 	site: 'https://sij411.github.io/blog-2024-June',
 	integrations: [mdx(), sitemap()],
-	base: '/blog-2024-June/',
+	
 	trailingSlash: 'always',
 	
 });
