@@ -1,17 +1,15 @@
 ---
-import BlogLayout from '../../layouts/BlogLayout.astro';
 import ContentsContainer from '../../components/ContentsContainer.astro';
 import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
 ---
 
-<BlogLayout>
-	<ContentsContainer class="main-contents"></ContentsContainer>
-	<p>
-		Click the posts on the list.
-	</p>
-</BlogLayout>
+<BaseLayout>
+	<ContentsContainer />
+	</BlogPost>
+  </BaseLayout>
 
